@@ -50,10 +50,10 @@ public class MathOperatorServiceTest {
     }
     //added division
     public void should_divide_numbers_success() throws InvalidOperationException {
-        double operator1 = 15;
+        double operator1 = 12;
         double operator2 = 3;
         String operation = "/";
-        double expectedResult = 5.0;
+        double expectedResult = 4.0;
 
         when(mathOperatorService.doMath(operator1, operator2, operation)).thenReturn(expectedResult);
 
@@ -65,9 +65,9 @@ public class MathOperatorServiceTest {
     @Test
     public void should_multiply_numbers_success() throws InvalidOperationException {
         double operator1 = 5;
-        double operator2 = 7;
+        double operator2 = 5;
         String operation = "*";
-        double expectedResult = 35.0;
+        double expectedResult = 25.0;
 
         when(mathOperatorService.doMath(operator1, operator2, operation)).thenReturn(expectedResult);
 
